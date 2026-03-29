@@ -1,4 +1,5 @@
 package ru.example.testcontainers.interfaces;
 
-public class SystemProfile {
+public interface SystemProfile {
+    String getProfile();
 }

@@ -1,4 +1,10 @@
 package ru.example.testcontainers.profile;
 
-public class ProductionProfile {
+import ru.example.testcontainers.interfaces.SystemProfile;
+
+public class ProductionProfile implements SystemProfile {
+    @Override
+    public String getProfile() {
+        return "Current profile is production";
+    }
 }
